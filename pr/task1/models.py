@@ -21,3 +21,28 @@ class Game(models.Model):
 
     def __str__(self):
         return self.title
+
+
+# class Messanger(models.Model):
+#     name = models.CharField(max_length=100)
+#
+#     def __str__(self):
+#         return self.name
+#
+#     class Meta:
+#         verbose_name = "Мессанчер"
+#         verbose_name_plural = "Мессанчер"
+#
+#
+# class Message(models.Model):
+#     title = models.CharField(max_length=100)
+#     size = models.DecimalField(max_digits=10, decimal_places=4)
+#     description = models.CharField(max_length=10000000)
+#     messanger = models.ManyToManyField(to=Messanger, related_name='messanges')
+#
+#     def __str__(self):
+#         return self.title
+#
+#     class Meta:
+#         verbose_name = "Сообщения"
+#         verbose_name_plural = "Сообщения"
